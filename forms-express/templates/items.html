@@ -7,10 +7,9 @@
     </head>
     <body>
         <ul>
-            ${longboards.map(l) => { console.log("lonboards") return `
-            <li><a href="/items/{l.model}"></a>${l.model</li>
-
-            ` }}
+            ${ longboards.map(l => { console.log("longboards"); return `
+            <li><a href="/items/${l.name}/${l.model}">${l.name}</a></li>
+            ` }).join(" ") }
         </ul>
     </body>
 </html>

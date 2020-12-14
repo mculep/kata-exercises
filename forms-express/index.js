@@ -62,14 +62,14 @@ app.get("/", (req, res) => {
 
 // Add an /items route that sends the whole array using res.json()
 
-// app.get("/items", (req, res) => {
-//     res.json(longboard[id]);
-// });
+app.get("/items", (req, res) => {
+    res.json(longboards);
+});
 // res.send() back the route param (so that when you go to /items/:id, you see the id)
 
-// app.get("/items/:id", (req, res) => {
-//     res.send;
-// });
+app.get("/items/:id", (req, res) => {
+    const boards = req.params.boards;
+});
 
 // Add a pair of routes (.get and .post) for the same path: /create
 
