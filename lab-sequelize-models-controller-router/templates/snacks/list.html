@@ -1,0 +1,8 @@
+${header}
+<h1>Snack List</h1>
+<a href="/snacks/new">Add new snack</a>
+<br>
+<ul>
+${snacks.map(s => `<li>${s.title}: ${s.category} - (${s.healthiness})</li>`).join('')}
+</ul>
+${footer}
