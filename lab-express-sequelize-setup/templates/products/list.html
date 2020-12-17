@@ -1,0 +1,8 @@
+${header}
+<h1>Products List</h1>
+<a href="/products/new">Add new product</a>
+<br>
+<ul>
+${products.map(p => `<li>${p.name}: $${p.price} (${p.color})</li>`).join('')}
+</ul>
+${footer}
